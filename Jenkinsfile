@@ -1,6 +1,6 @@
-pipeline {
+node {
   agent any
-  node {
+  stage("test") {
      def script = load("Test.groovy")
 
      script.run()
