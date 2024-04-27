@@ -1,12 +1,8 @@
 pipeline {
-  agent {
-    docker { image 'node:latest' }
-  }
+  agent any
   stages {
-    stage('Test stage') {
-      steps {
-        sh 'node --version'
-      }
-    }
+     def script = load("Test.groovy")
+
+     script.run()
   }
 }
