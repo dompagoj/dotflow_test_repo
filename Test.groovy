@@ -7,5 +7,4 @@ def run() {
         echo "Cleanup"
     }
 }
-
 return this

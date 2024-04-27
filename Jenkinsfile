@@ -1,6 +1,6 @@
 pipeline {
   agent any
-  stages {
+  node {
      def script = load("Test.groovy")
 
      script.run()
