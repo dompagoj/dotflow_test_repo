@@ -1,6 +1,6 @@
-﻿using DotFlowCI;
+﻿using LibDotFlow;
 
-namespace Dotflow;
+namespace DotFlow;
 
 [DotFlowJob]
 public class TestJob : Job

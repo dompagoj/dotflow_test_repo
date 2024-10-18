@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="../../DotFlowCI/DotFlowCI/DotFlowCI.csproj"/>
+    <PackageReference  Include="LibDotFlow" Version="1.0.0"/>
   </ItemGroup>
 
 </Project>
