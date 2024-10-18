@@ -7,7 +7,7 @@ public class TestJob : Job
 {
     public TestJob()
     {
-        Name = "Test job";
+        Name = "Test job 123";
 
         StartOn(opts =>
         {
