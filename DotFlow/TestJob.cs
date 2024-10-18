@@ -1,4 +1,5 @@
-﻿using LibDotFlow;
+﻿using Docker.DotNet;
+using LibDotFlow;
 
 namespace DotFlow;
 
@@ -8,6 +9,7 @@ public class TestJob : Job
     public TestJob()
     {
         Name = "Test job 123";
+        new DockerClientConfiguration();
 
         StartOn(opts =>
         {
