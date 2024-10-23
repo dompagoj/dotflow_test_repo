@@ -20,11 +20,6 @@ public class TestJob : Job
             {
                 c.Shell("asd123");
             });
-
-            s.Host(h =>
-            {
-                h.Shell("echo 123");
-            });
         });
     }
 }
