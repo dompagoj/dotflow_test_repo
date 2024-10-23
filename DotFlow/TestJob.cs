@@ -1,5 +1,4 @@
-﻿using Docker.DotNet;
-using LibDotFlow;
+﻿using LibDotFlow;
 
 namespace DotFlow;
 
@@ -17,6 +16,11 @@ public class TestJob : Job
 
         Step("test step one two three", s =>
         {
+            s.Container("asd", c =>
+            {
+                c.Shell("asd");
+            });
+
             s.Host(h =>
             {
                 h.Shell("echo 123");
