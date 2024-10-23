@@ -18,7 +18,7 @@ public class TestJob : Job
         {
             s.Container("asd", c =>
             {
-                c.Shell("asd");
+                c.Shell("asd123");
             });
 
             s.Host(h =>
